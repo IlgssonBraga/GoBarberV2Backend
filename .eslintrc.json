@@ -24,7 +24,8 @@
     ],
     "rules": {
         "prettier/prettier":"error",
-        "import/extensions":["error","ignorePackages",{"ts":"never"}]
+        "import/extensions":["error","ignorePackages",{"ts":"never"}],
+        "class-methods-use-this": "off"
     },
     "settings": {
         "import/resolver":{
