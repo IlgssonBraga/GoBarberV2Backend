@@ -1,6 +1,7 @@
 import 'reflect-metadata';
 import express, { Request, Response, NextFunction } from 'express';
 import 'express-async-errors';
+import cors from 'cors';
 import routes from '@shared/infra/http/routes';
 import '@shared/infra/typeorm';
 import uploadConfig from '@config/upload';
@@ -8,6 +9,7 @@ import AppError from '@shared/errors/AppError';
 import '@shared/container';
 
 const app = express();
+app.use(cors());
 
 app.use(express.json());
 
